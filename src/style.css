@@ -1,5 +1,7 @@
 body {
     background-color: rgb(246, 246, 163);
+    
+    flex-wrap: wrap;
    
  
  }
@@ -47,8 +49,8 @@ body {
     
  }
  .frontTarjeta, .backTarjeta {
-     width: 200%;
-     height: 200%;
+     width: 100%;
+     height: 50%;
      background: rgba(164, 226, 128, 0.874);
      -webkit-backface-visibility: hidden;
      backface-visibility: hidden;
