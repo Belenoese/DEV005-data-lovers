@@ -24,6 +24,16 @@ export const tarjetas = (data) => {
 };
 
 
+
+
+
+const  buscarPorNombre = (texto)=>{
+  const buscarNombre = data.filter(pokemon => pokemon.name.toLowerCase().includes(texto.toLowerCase()));
+  return buscarPorNombre(buscarNombre)
+}
+
+
+
 export const anotherExample = () => {
   return 'OMG';
 };
