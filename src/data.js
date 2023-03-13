@@ -19,10 +19,9 @@ export const tarjetas = (data) => {
   }
 
   return tarjetaString;
-} 
+  
 
-;
-
+};
 
 
 export const anotherExample = () => {

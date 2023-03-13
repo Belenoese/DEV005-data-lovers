@@ -58,7 +58,8 @@ body {
     padding: 15px;
     width: 200px;
     height: 250px;
-    background: rgb(147, 226, 147);
+    border: 6px groove;
+    background: aliceblue;
     position: relative;
     transform-style: preserve-3d;
     transition: .7s ease;
@@ -93,7 +94,7 @@ body {
     align-items: center;
 
     text-align: center;
-    color: #fff;
+    color: #0b0909;
     font-family: "open sans";
  }
 
@@ -105,6 +106,10 @@ body {
 
  .imagenPokemon{
     width: 180px;
-    height: 200px;
+    height: 180px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(147, 226, 147);
+    text-align: center;
     
  }

@@ -6,7 +6,14 @@ import data from './data/pokemon/pokemon.js';
 const bloqueTarjetas = document.getElementById("bloqueTarjetas");
 bloqueTarjetas.innerHTML= tarjetas(data);
 
+const inputBuscar = document.getElementById("buscar");
+//inputBuscar.innerHTML = tarjetaString;
+//Busqueda
+inputBuscar.addEventListener('keyup',(e)=>{
+  const texto= e.target.value;
+  console.log(texto);
 
+})
 
 
 //console.log(tarjetas, data);
