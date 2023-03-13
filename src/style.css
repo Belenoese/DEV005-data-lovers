@@ -1,6 +1,11 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(246, 246, 163);
-    
     flex-wrap: wrap;
    
  
@@ -17,12 +22,15 @@ body {
  }
  .contenedor h1{
      
-     font-size: xx-large;
+     font-size: 18px;
      font-weight: bold;
      color: black;
-     justify-content:center;
-     margin-left: 70px;
-     padding-inline: 50px;
+     padding-top: 250px;
+     padding-left: 500px;
+    
+
+    
+     
      
  }
  
@@ -34,34 +42,69 @@ body {
     align-items: start;
     align-content: space-between;
     gap: 20px 20px 
-    /* -webkit-perspective: 100;
-    perspective: 100;  */
   }
     
 
- .card {
+ .tarjetapokemon {
+    
      margin: 10px;
-     width: 300px;
-     height: 350px;
-     flex-wrap: wrap;
-     position: relative;
-     transform-style: preserve-3d;
-     transition: .7s ease;
-     
+    -webkit-perspective: 800;
+     perspective: 800;
+    
     
  }
+
+ .tarjeta{
+    padding: 15px;
+    width: 200px;
+    height: 250px;
+    background: rgb(147, 226, 147);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+
+ }
  .frontTarjeta, .backTarjeta {
-    display: flex;
-    flex-wrap: wrap;
-     width: 10em;
-     background: rgba(164, 226, 128, 0.874);
-     -webkit-backface-visibility: hidden;
-     backface-visibility: hidden;
-     
+
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
      
  }
- 
+
  .backTarjeta {
-     transform: rotateY(180deg);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
  }
- 
+
+
+ .frontTarjeta {
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+    font-family: "open sans";
+ }
+
+ .tarjetapokemon:hover .tarjeta{
+    transform: rotateY(180deg);
+    
+ }
+
+
+ .imagenPokemon{
+    width: 180px;
+    height: 200px;
+    
+ }

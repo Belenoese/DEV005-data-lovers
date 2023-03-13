@@ -6,7 +6,7 @@ import data from './data/pokemon/pokemon.js';
 const bloqueTarjetas = document.getElementById("bloqueTarjetas");
 bloqueTarjetas.innerHTML= tarjetas(data);
 
-console.log('tarjetas', data);
+
 
 
 //console.log(tarjetas, data);
