@@ -7,15 +7,14 @@ const bloqueTarjetas = document.getElementById("bloqueTarjetas");
 bloqueTarjetas.innerHTML= tarjetas(data);
 
 const ordenarInput = document.getElementById("name");
-ordenarInput.addEventListener("keyup", (event) => {
-    if (event.key === "Enter") {
+ordenarInput.addEventListener("input", (event) => {
         const busqueda = event.target.value.toLowerCase();
         const pokemonFiltrados = data.pokemon.filter((pokemon) =>
-        pokemon.name.toLowerCase().includes(busqueda));
+            pokemon.name.toLowerCase().includes(busqueda));
 
         bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonFiltrados});
         console.log(bloqueTarjetas);
-    }
+    
 });
 
 
