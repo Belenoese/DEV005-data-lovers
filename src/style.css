@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(246, 246, 163);
+    flex-wrap: wrap;
+   
+ 
+ }
+ 
+ .contenedor {
+     background-image: url(img/pokemon.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 300px; 
+     margin: 0px;
+     padding: 0px;
+ }
+ .contenedor h1{
+     
+     font-size: 18px;
+     font-weight: bold;
+     color: black;
+     padding-top: 250px;
+     padding-left: 500px;
+    
+
+    
+     
+     
+ }
+ 
+ #bloqueTarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    align-content: space-between;
+    gap: 20px 20px 
+  }
+    
+
+ .tarjetapokemon {
+    
+     margin: 10px;
+    -webkit-perspective: 800;
+     perspective: 800;
+    
+    
+ }
+
+ .tarjeta{
+    padding: 15px;
+    width: 200px;
+    height: 250px;
+    border: 6px groove;
+    background: aliceblue;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+
+ }
+ .frontTarjeta, .backTarjeta {
+
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+     
+ }
+
+ .backTarjeta {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+ }
+
+
+ .frontTarjeta {
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #0b0909;
+    font-family: "open sans";
+ }
+
+ .tarjetapokemon:hover .tarjeta{
+    transform: rotateY(180deg);
+    
+ }
+
+
+ .imagenPokemon{
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(147, 226, 147);
+    text-align: center;
+    
+ }
