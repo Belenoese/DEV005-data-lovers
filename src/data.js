@@ -9,7 +9,7 @@ export const tarjetas = (data) => {
     <div class= "tarjeta">
     <div class= "frontTarjeta">   
     <img class= "imagenPokemon" src = ${pokemon.img}>
-    <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()}</p>
+    <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()} <br>Tipo: ${pokemon.type}</p>
     </div>
     <div class= "backTarjeta">
     <p> Ataque: <br> ${pokemon.stats["base-attack"]} 
