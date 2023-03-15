@@ -5,16 +5,20 @@ export const tarjetas = (data) => {
   let tarjetaString = " ";
   for (const pokemon of data.pokemon){
     tarjetaString +=`
-    <div class= "tarjetapokemon">
+    <div class= "tarjetapokemon"> 
     <div class= "tarjeta">
-    <div class= "frontTarjeta"> <h1> <p> #${pokemon.stats}</h1> </p> </div>
-    <div class= "backTarjeta">
+    <div class= "frontTarjeta" 
+    
     <img class= "imagenPokemon" src = ${pokemon.img}>
     <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()}</p>
     </div>
     </div>
+
+    <div class= "backTarjeta" <p>#${pokemon.stats}</p>
+
     </div>`
     
+    console.log(pokemon.stats);
     
   }
 

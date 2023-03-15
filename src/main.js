@@ -7,8 +7,6 @@ import data from './data/pokemon/pokemon.js';
 const bloqueTarjetas = document.getElementById("bloqueTarjetas");
 bloqueTarjetas.innerHTML= tarjetas(data);
 
-bloqueTarjetas.innerHTML = tarjetas (pokemon.stats);
-
 const ordenarInput = document.getElementById("name");
 ordenarInput.addEventListener("input", (event) => {
  
@@ -19,8 +17,9 @@ ordenarInput.addEventListener("input", (event) => {
         bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonFiltrados});
         console.log(bloqueTarjetas);
     }
-});
+);
 
+/*bloqueTarjetas.innerHTML = tarjetas (pokemon.stats);*/
 
 const filtroTipo=document.getElementById('filtroTipo');
 filtroTipo.addEventListener('change', function(e){
