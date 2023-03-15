@@ -7,18 +7,14 @@ export const tarjetas = (data) => {
     tarjetaString +=`
     <div class= "tarjetapokemon"> 
     <div class= "tarjeta">
-    <div class= "frontTarjeta" 
-    
+    <div class= "frontTarjeta"> <h1> <p> #${pokemon.stats}</h1> </p> </div>
+    <div class= "backTarjeta">
     <img class= "imagenPokemon" src = ${pokemon.img}>
     <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()}</p>
     </div>
     </div>
-
-    <div class= "backTarjeta" <p>#${pokemon.stats}</p>
-
     </div>`
     
-    console.log(pokemon.stats);
     
   }
 

@@ -77,8 +77,16 @@ body {
      
  }
 
+ .backTarjeta {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+ }
 
- /*.frontTarjeta {
+
+ .frontTarjeta {
     transform: rotateY(180deg);
     padding: 15px;
     display: flex;
