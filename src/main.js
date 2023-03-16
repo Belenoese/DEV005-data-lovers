@@ -19,6 +19,7 @@ ordenarInput.addEventListener("input", (event) => {
   
 });
 
+/*bloqueTarjetas.innerHTML = tarjetas (pokemon.stats);*/
 
 const filtroTipo=document.getElementById('filtroTipo');
 filtroTipo.addEventListener('change', function(e){
