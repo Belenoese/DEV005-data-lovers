@@ -14,10 +14,10 @@ ordenarInput.addEventListener("input", (event) => {
   const pokemonFiltrados = data.pokemon.filter((pokemon) =>
     pokemon.name.toLowerCase().includes(busqueda));
 
-        bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonFiltrados});
-        console.log(bloqueTarjetas);
-    }
-);
+  bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonFiltrados});
+  console.log(bloqueTarjetas);
+  
+});
 
 /*bloqueTarjetas.innerHTML = tarjetas (pokemon.stats);*/
 

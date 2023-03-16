@@ -10,7 +10,7 @@ export const tarjetas = (data) => {
     <div class= "frontTarjeta"> <h1> <p> #${pokemon.stats}</h1> </p> </div>
     <div class= "backTarjeta">
     <img class= "imagenPokemon" src = ${pokemon.img}>
-    <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()}</p>
+    <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()} <br>Tipo: ${pokemon.type}</p>
     </div>
     </div>
     </div>`
@@ -23,10 +23,7 @@ export const tarjetas = (data) => {
 
 };
 
-const  buscarPokemon = (texto)=>{
-  const buscarNombre = data.filter(pokemon => pokemon.name.toLowerCase().includes(texto.toLowerCase()));
-  return buscarPokemon(buscarNombre)
-}
+
 
 
 
