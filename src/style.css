@@ -19,14 +19,16 @@ body {
      height: 300px; 
      margin: 0px;
      padding: 0px;
+     display: inline-flexbox;
  }
  .contenedor h1{
      
-     font-size: 18px;
+     font-size:  1em;
      font-weight: bold;
      color: black;
-     padding-top: 250px;
-     padding-left: 500px;
+     padding-top: 16em;
+     padding-left: 25em;
+     display:flex ;
     
 
     
