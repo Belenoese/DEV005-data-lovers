@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="contenedor">
-      <h1>Bienvenido al maravilloso mundo de POKEMON GO conoce mas
-        de tus personajes favoritos</h1>
-    </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="contenedor">
+    <h1>Bienvenido al maravilloso mundo de POKEMON GO conoce mas
+      de tus personajes favoritos</h1>
+  </div>
 
 
-    <div class ="botones">
+  <div class="botones">
 
     <input type="text" id="name" class="buscarname" placeholder="Ingrese un nombre">
-          
-    <select id="filtroTipo">
-        <option>Selecciona un filtro por tipo</option>
-        <option value ="fire">Fuego</option>
-        <option value ="water">Agua</option>
-        <option value ="rock">Roca</option>
-        <option value ="flying">Volador</option>
-        <option value ="poison">Veneno</option>
-        <option value ="ghost">Fantasma</option>
-        <option value ="ice">Hielo</option>
-        <option value ="grass">Planta</option>
-        <option value ="steel">Metal</option>
-        <option value ="normal">Normal</option>
-        <option value ="electric">Eléctrico</option>
-        <option value ="ground">Tierra</option>
-        <option value ="fighting">Lucha</option>
-        <option value ="dragon">Dragon</option>
-        <option value ="fairy">Hada</option>
-        <option value ="dark">Oscuro</option>
-        <option value ="psychic">Psíquico</option>
-        <option value ="bug">Insecto</option>  
-      </select>
-      
-      <select name="ordenar" id="ordenar"> 
-        <option>Ordenar</option>
-        <option>A-Z</option>
-        <option>Z-A</option>
-      </select>
 
-    <div id="bloqueTarjetas">      
-        
+    <select id="filtroTipo">
+      <option>Selecciona un filtro por tipo</option>
+      <option value="fire">Fuego</option>
+      <option value="water">Agua</option>
+      <option value="rock">Roca</option>
+      <option value="flying">Volador</option>
+      <option value="poison">Veneno</option>
+      <option value="ghost">Fantasma</option>
+      <option value="ice">Hielo</option>
+      <option value="grass">Planta</option>
+      <option value="steel">Metal</option>
+      <option value="normal">Normal</option>
+      <option value="electric">Eléctrico</option>
+      <option value="ground">Tierra</option>
+      <option value="fighting">Lucha</option>
+      <option value="dragon">Dragon</option>
+      <option value="fairy">Hada</option>
+      <option value="dark">Oscuro</option>
+      <option value="psychic">Psíquico</option>
+      <option value="bug">Insecto</option>
+    </select>
+
+    <select name="ordenar" id="ordenar">
+      <option value="">Ordenar</option>
+      <option value="asc">A-Z</option>
+      <option value="desc">Z-A</option>
+    </select>
+
+    <div id="bloqueTarjetas">
+
     </div>
 
   </div>
-    
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
