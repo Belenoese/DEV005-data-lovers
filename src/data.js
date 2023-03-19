@@ -1,15 +1,14 @@
-// estas funciones son de ejemplo
-
-
 export const tarjetas = (data) => {
   let tarjetaString = " ";
-  for (const pokemon of data.pokemon){
-    tarjetaString +=`
+  for (const pokemon of data.pokemon) {
+    tarjetaString += `
     <div class= "tarjetapokemon">
     <div class= "tarjeta">
     <div class= "frontTarjeta">   
     <img class= "imagenPokemon" src = ${pokemon.img}>
-    <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()} <br>Tipo: ${pokemon.type}</p>
+    <p> #${pokemon.num} <br> ${pokemon.name.toUpperCase()} <br>Tipo: ${
+      pokemon.type
+    }</p>
     </div>
     <div class= "backTarjeta">
     <p> Ataque: <br> ${pokemon.stats["base-attack"]} 
@@ -24,14 +23,7 @@ export const tarjetas = (data) => {
   }
 
   return tarjetaString;
-  
-
 };
-
-
-
-
-
 
 /*export const filtrarTipos = ( data , tipo ) => {
   const datosFiltrada = data.pokemon.filter((pokemon) =>
@@ -41,9 +33,18 @@ export const tarjetas = (data) => {
  
 };*/
 
-export const  filtrarTipos = ( data, tipo)  => {
-  const dataFiltrada = data.filter(pokemon => pokemon.type.includes (tipo))
+export const filtrarTipos = (data, tipo) => {
+  const dataFiltrada = data.filter((pokemon) => pokemon.type.includes(tipo));
   //console.log(dataFiltrada);
-  return   dataFiltrada;
-  
+  return dataFiltrada;
 };
+
+export function ordenarPorNombre(pokemonA, pokemonB) {
+  if (pokemonA.name < pokemonB.name) {
+    return -1;
+  } else if (pokemonA.name > pokemonB.name) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
