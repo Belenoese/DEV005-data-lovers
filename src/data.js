@@ -16,10 +16,31 @@ export const tarjetas = (data) => {
     <br> Max-hp: <br> ${pokemon.stats["base-defense"]}</p>
     </div>  
     </div> 
-    </div>`
+    </div>`;
     //console.log(pokemon.stats);
   }
 
   return tarjetaString;
+  
+
+};
+
+
+
+
+
+
+/*export const filtrarTipos = ( data , tipo ) => {
+  const datosFiltrada = data.pokemon.filter((pokemon) =>
+    pokemon.type.includes(tipo)
+  );
+  return { pokemon : datosFiltrada };
+ 
+};*/
+
+export const  filtrarTipos = ( data, tipo)  => {
+  const dataFiltrada = data.filter(pokemon => pokemon.type.includes (tipo))
+  //console.log(dataFiltrada);
+  return   dataFiltrada;
   
 };
