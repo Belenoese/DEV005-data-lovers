@@ -28,3 +28,4 @@ filtroTipo.addEventListener('change', function(e){
 
 //console.log(tarjetas, data);
 
+const ordenarSelect = document.getElementById("ordenar");

@@ -22,5 +22,4 @@ export const tarjetas = (data) => {
 
   return tarjetaString;
   
-
 };
