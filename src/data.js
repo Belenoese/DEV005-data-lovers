@@ -34,10 +34,11 @@ export const tarjetas = (data) => {
 };*/
 
 export const filtrarTipos = (data, tipo) => {
-  const dataFiltrada = data.filter((pokemon) => pokemon.type.includes(tipo));
-  //console.log(dataFiltrada);
+  const dataFiltrada = data.pokemon.filter((pokemon) => pokemon.type.includes(tipo));
   return dataFiltrada;
-};
+}
+
+//console.log (filtrarTipos);
 
 export function ordenarPorNombre(pokemonA, pokemonB) {
   if (pokemonA.name < pokemonB.name) {

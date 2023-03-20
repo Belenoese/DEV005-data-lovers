@@ -20,12 +20,9 @@ ordenarInput.addEventListener("input", (event) => {
 //Filtrado por tipo de Pokemon
 const filtroTipo = document.getElementById("filtroTipo");
 filtroTipo.addEventListener("change", function (e) {
-  const tipoSeleccionado = e.target.value;
-  const pokemonHTML = data.pokemon.filter((pokemon) =>
-    pokemon.type.includes(tipoSeleccionado)
-  );
+  const pokemonSeleccionado = e.target.value;
+  const pokemonHTML = filtrarTipos (data, pokemonSeleccionado);
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonHTML });
-  //console.log('Cambio el tipo por: ',pokemonHTML);
 });
 
 const ordenarSelect = document.getElementById("ordenar");
