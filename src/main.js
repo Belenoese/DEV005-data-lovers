@@ -1,5 +1,5 @@
-import { tarjetas, filtrarTipos, ordenarNombre } from "./data.js";
-import pokemon from "./data/pokemon/pokemon.js";
+import { tarjetas, buscarPorNombre, filtrarTipos, ordenarPorNombre } from "./data.js";
+/*import pokemon from "./data/pokemon/pokemon.js";*/
 
 import data from "./data/pokemon/pokemon.js";
 
@@ -9,32 +9,24 @@ bloqueTarjetas.innerHTML = tarjetas(data);
 
 //Buscar Pokemon por nombre
 const ordenarInput = document.getElementById("name");
-ordenarInput.addEventListener("input", (event) => {
-  const busqueda = event.target.value.toLowerCase();
-  const pokemonFiltrados = data.pokemon.filter((pokemon) =>
-    pokemon.name.toLowerCase().includes(busqueda)
-  );
+ordenarInput.addEventListener("input", (e) => {
+  const busqueda = e.target.value.toLowerCase();
+  const pokemonFiltrados = buscarPorNombre(data, busqueda);
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonFiltrados });
 });
 
 //Filtrado por tipo de Pokemon
 const filtroTipo = document.getElementById("filtroTipo");
-filtroTipo.addEventListener("change", function (e) {
+filtroTipo.addEventListener("change", (e) => {
   const pokemonSeleccionado = e.target.value;
   const pokemonHTML = filtrarTipos (data, pokemonSeleccionado);
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonHTML });
 });
 
+//Ordenar de A-Z Y Z-A
 const ordenarSelect = document.getElementById("ordenar");
-ordenarSelect.addEventListener("change", () => {
-  const pokemonOrdenados = data.pokemon.slice().sort((a, b) => {
-    if (ordenarSelect.value === "asc") {
-      return ordenarNombre(a, b);
-    } else if (ordenarSelect.value === "desc") {
-      return ordenarNombre(b, a);
-    } else {
-      return 0;
-    }
-  });
-  bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonOrdenados });
+ordenarSelect.addEventListener("change", (e) => {
+  const ordenados = e.target.value;
+  const ordenasc =ordenarPorNombre (data, ordenados)
+  bloqueTarjetas.innerHTML = tarjetas({ pokemon: ordenasc });
 });

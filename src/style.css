@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(246, 246, 163);
+    background-color: rgb(237, 205, 117);
     flex-wrap: wrap;
    
  
@@ -21,19 +21,13 @@ body {
      padding: 0px;
      display: inline-flexbox;
  }
- .contenedor h1{
+ 
+ h1 {
      
-     font-size:  1em;
-     font-weight: bold;
+     font-size:  25px;
      color: black;
-     padding-top: 16em;
-     padding-left: 25em;
-     display:flex ;
-    
-
-    
-     
-     
+     padding-top: 10px;
+     text-align: center;
  }
  
  #bloqueTarjetas{
@@ -61,11 +55,12 @@ body {
     padding: 15px;
     width: 200px;
     height: 250px;
-    border: 6px groove;
+    border-radius: 10px;
     background: aliceblue;
     position: relative;
     transform-style: preserve-3d;
     transition: .7s ease;
+    
 
  }
  .frontTarjeta, .backTarjeta {
@@ -128,7 +123,7 @@ body {
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 20px;
    font-weight: bold;
-   background-color:#C04A82;
+   background-color:#B0D5FF;
  }
  #name{
    height: 40px;
@@ -136,16 +131,21 @@ body {
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 20px;
    font-weight: bold;
-   background-color:#C04A82;
+   background-color:#B0D5FF;
    
  }
+
+ input::placeholder {
+   color: black;
+ }
+
  #ordenar{
    height: 40px;
    margin: 50px;
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 20px;
    font-weight: bold;
-   background-color:#C04A82;
+   background-color:#B0D5FF;
    margin-left: 30px;
    
    
