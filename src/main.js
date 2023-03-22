@@ -1,4 +1,4 @@
-import { tarjetas, filtrarTipos, ordenarPorNombre } from "./data.js";
+import { tarjetas, filtrarTipos, ordenarNombre } from "./data.js";
 import pokemon from "./data/pokemon/pokemon.js";
 
 import data from "./data/pokemon/pokemon.js";
@@ -29,9 +29,9 @@ const ordenarSelect = document.getElementById("ordenar");
 ordenarSelect.addEventListener("change", () => {
   const pokemonOrdenados = data.pokemon.slice().sort((a, b) => {
     if (ordenarSelect.value === "asc") {
-      return ordenarPorNombre(a, b);
+      return ordenarNombre(a, b);
     } else if (ordenarSelect.value === "desc") {
-      return ordenarPorNombre(b, a);
+      return ordenarNombre(b, a);
     } else {
       return 0;
     }

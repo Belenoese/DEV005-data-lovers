@@ -34,18 +34,15 @@ export const tarjetas = (data) => {
 };*/
 
 export const filtrarTipos = (data, tipo) => {
-  const dataFiltrada = data.pokemon.filter((pokemon) => pokemon.type.includes(tipo));
+  const dataFiltrada = data.pokemon.filter((pokemon) => pokemon.type.includes(tipo)
+  );
   return dataFiltrada;
 }
 
-//console.log (filtrarTipos);
+console.log (filtrarTipos);
 
-export function ordenarPorNombre(pokemonA, pokemonB) {
-  if (pokemonA.name < pokemonB.name) {
-    return -1;
-  } else if (pokemonA.name > pokemonB.name) {
-    return 1;
-  } else {
-    return 0;
-  }
+export function ordenarNombre(data,nombre) {
+  const ordenar = data.pokemon.sort((pokemon) => pokemon.name.includes(nombre));
+  return ordenar;
 }
+
