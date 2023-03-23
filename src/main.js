@@ -17,7 +17,6 @@ ordenarInput.addEventListener("input", (e) => {
 
 //Filtrado por tipo de Pokemon
 const filtroTipo = document.getElementById("filtroTipo");
-const calculator = document.getElementById("calculator")
 filtroTipo.addEventListener("change", (e) => {
   const pokemonSeleccionado = e.target.value;
   const pokemonHTML = filtrarTipos (data, pokemonSeleccionado);
