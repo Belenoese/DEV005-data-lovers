@@ -48,7 +48,7 @@ export const ordenarPorNombre = (data, orden) => {
   return ordenados;
 };
 
-const tipospokemon = [
+/*const tipospokemon = [
   "fire",
   "water",
   "rock",
@@ -67,10 +67,10 @@ const tipospokemon = [
   "dark",
   "psychic",
   "bug",
-];
+];*/
 
-const arrTotalTypes = [ ];
+//const arrTotalTypes = [ ];
 
-for (let i = 0; i < tipospokemon.length; i++ ){
-  if ((i +1) % 2 === 0 )
-}
+//for (let i = 0; i < tipospokemon.length; i++ ){
+// if ((i +1) % 2 === 0 )
+//}
