@@ -36,7 +36,7 @@ export const filtrarTipos = (data, tipo) => {
   return dataFiltrada;
 };
 
-console.log (filtrarTipos);
+//console.log (filtrarTipos);
 
 export const ordenarPorNombre = (data, orden) => {
   const ordenados = data.pokemon.sort((a, b) => {
@@ -47,3 +47,30 @@ export const ordenarPorNombre = (data, orden) => {
   });
   return ordenados;
 };
+
+const tipospokemon = [
+  "fire",
+  "water",
+  "rock",
+  "flying",
+  "poison",
+  "ghost",
+  "ice",
+  "grass",
+  "steel",
+  "normal",
+  "electric",
+  "ground",
+  "fighting",
+  "dragon",
+  "fairy",
+  "dark",
+  "psychic",
+  "bug",
+];
+
+const arrTotalTypes = [ ];
+
+for (let i = 0; i < tipospokemon.length; i++ ){
+  if ((i +1) % 2 === 0 )
+}
