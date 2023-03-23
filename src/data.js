@@ -47,3 +47,11 @@ export const ordenarPorNombre = (data, orden) => {
   });
   return ordenados;
 };
+
+export const calcular = (valorActual) => {
+  const valorTotal = 251;
+  const porcentaje = Math.round((valorActual/valorTotal) * 100);
+  return porcentaje;
+}
+
+

@@ -1,4 +1,4 @@
-import { tarjetas, buscarPorNombre, filtrarTipos, ordenarPorNombre } from "./data.js";
+import { tarjetas, buscarPorNombre, filtrarTipos, ordenarPorNombre, calcular } from "./data.js";
 /*import pokemon from "./data/pokemon/pokemon.js";*/
 
 import data from "./data/pokemon/pokemon.js";
@@ -30,3 +30,16 @@ ordenarSelect.addEventListener("change", (e) => {
   const ordenasc =ordenarPorNombre (data, ordenados)
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: ordenasc });
 });
+
+const calcucarPorcentaje = document.getElementById("filtroTipo");
+const calculator = document.getElementById("calculator");
+
+calcucarPorcentaje.addEventListener("change", () => {
+ const pokeFilter = data.pokemon.filter(pokemon => pokemon.type.includes(calcucarPorcentaje.value));
+ const porcentaje = calcular(pokeFilter.length);
+ calculator.innerHTML = "Este tipo de pokemon representa el " + porcentaje + "% del total";
+})
+
+
+
+
