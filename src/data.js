@@ -48,29 +48,3 @@ export const ordenarPorNombre = (data, orden) => {
   return ordenados;
 };
 
-/*const tipospokemon = [
-  "fire",
-  "water",
-  "rock",
-  "flying",
-  "poison",
-  "ghost",
-  "ice",
-  "grass",
-  "steel",
-  "normal",
-  "electric",
-  "ground",
-  "fighting",
-  "dragon",
-  "fairy",
-  "dark",
-  "psychic",
-  "bug",
-];*/
-
-//const arrTotalTypes = [ ];
-
-//for (let i = 0; i < tipospokemon.length; i++ ){
-// if ((i +1) % 2 === 0 )
-//}

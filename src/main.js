@@ -17,11 +17,15 @@ ordenarInput.addEventListener("input", (e) => {
 
 //Filtrado por tipo de Pokemon
 const filtroTipo = document.getElementById("filtroTipo");
+const calculator = document.getElementById("calculator")
 filtroTipo.addEventListener("change", (e) => {
   const pokemonSeleccionado = e.target.value;
   const pokemonHTML = filtrarTipos (data, pokemonSeleccionado);
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonHTML });
+ 
+  
 });
+
 
 //Ordenar de A-Z Y Z-A
 const ordenarSelect = document.getElementById("ordenar");
@@ -30,3 +34,6 @@ ordenarSelect.addEventListener("change", (e) => {
   const ordenasc =ordenarPorNombre (data, ordenados)
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: ordenasc });
 });
+
+
+
