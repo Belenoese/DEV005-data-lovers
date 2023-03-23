@@ -42,8 +42,8 @@ export const ordenarPorNombre = (data, orden) => {
   const ordenados = data.pokemon.sort((a, b) => {
     if (a.name > b.name) {
       return orden === "asc" ? 1 : -1;
-    } else (b.name < a.name)
-    return orden === "asc" ? -1 : 1;
+    } else 
+      return orden === "asc" ? -1 : 1;
   });
   return ordenados;
 };
