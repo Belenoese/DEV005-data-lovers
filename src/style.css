@@ -93,7 +93,8 @@ body {
     align-items: center;
     text-align: center;
     color:black;
-    font-family: "open sans";
+    font-weight: bold;
+    background-color: rgb(147, 226, 147);
  }
 
  .tarjetapokemon:hover .tarjeta{
@@ -103,12 +104,12 @@ body {
 
 
  .imagenPokemon{
-    width: 160px;
-    height: 150px;
-    margin: 5px;
+    width: 200px;
+    height: 160px;
     padding: 10px;
     background-color: rgb(147, 226, 147);
     text-align: center;
+    border-radius: 10px;
     
  }
 
