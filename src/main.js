@@ -35,9 +35,9 @@ const calcucarPorcentaje = document.getElementById("filtroTipo");
 const calculator = document.getElementById("calculator");
 
 calcucarPorcentaje.addEventListener("change", () => {
- const pokeFilter = data.pokemon.filter(pokemon => pokemon.type.includes(calcucarPorcentaje.value));
- const porcentaje = calcular(pokeFilter.length);
- calculator.innerHTML = "Este tipo de pokemon representa el " + porcentaje + "% del total";
+  const pokeFilter = data.pokemon.filter(pokemon => pokemon.type.includes(calcucarPorcentaje.value));
+  const porcentaje = calcular(pokeFilter.length);
+  calculator.innerHTML = "Este tipo de pokémon representa el " + porcentaje + "% del total";
 })
 
 

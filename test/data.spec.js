@@ -119,4 +119,8 @@ describe("ordenarPorNombre", () => {
   it("deberia ordenar los pokemon de Z-A", () => {
     expect(ordenarPorNombre({ pokemon: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6] }, "desc")).toEqual([pokemon2, pokemon1, pokemon6, pokemon4, pokemon3, pokemon5]);
   });
+
+  it("NO deberia ordenar los pokemon de Z-A", () => {
+    expect(ordenarPorNombre({ pokemon: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6] }, "desc")).not.toEqual([pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6]);
+  });
 });
