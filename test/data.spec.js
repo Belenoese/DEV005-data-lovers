@@ -1,4 +1,4 @@
-import {tarjetas, buscarPorNombre, filtrarTipos, ordenarPorNombre} from "../src/data.js";
+import {tarjetas, buscarPorNombre, filtrarTipos, ordenarPorNombre, calcular} from "../src/data.js";
 
 const data = {
   pokemon: [
@@ -112,7 +112,7 @@ describe("ordenarPorNombre", () => {
   const pokemon6 = { name: "metapod" };
 
 
-  it("deberia ordenar los pokemon de A-Z", () => {
+  it("deberia orde los pokemon de A-Z", () => {
     expect(ordenarPorNombre({ pokemon: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6] }, "asc")).toEqual([pokemon5, pokemon3, pokemon4, pokemon6, pokemon1, pokemon2]);
   });
 
@@ -120,3 +120,24 @@ describe("ordenarPorNombre", () => {
     expect(ordenarPorNombre({ pokemon: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6] }, "desc")).toEqual([pokemon2, pokemon1, pokemon6, pokemon4, pokemon3, pokemon5]);
   });
 });
+
+describe("calcular", () => {
+  it("is a function", () => {
+    expect(typeof calcular).toBe("function");
+  });
+
+  it("deberia calcular el porcentaje de pokemones  tipo Dragon", () => {
+    const porcentajeDragon = calcular (4);
+    expect(porcentajeDragon).toStrictEqual(2);
+  });
+
+  it("deberia calcular el porcentaje de pokemones  tipo Agua", () => {
+    const porcentajeAgua = calcular (50);
+    expect(porcentajeAgua).toStrictEqual(20);
+  });
+  it("deberia calcular el porcentaje de pokemones  tipo Fuego", () => {
+    const porcentajeFuego = calcular (30);
+    expect(porcentajeFuego).not.toStrictEqual(9);
+  });
+});
+  
