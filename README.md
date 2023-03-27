@@ -83,3 +83,16 @@
   
   Si deseas acceder a la interfaz del proyecto puedes ingresar al siguiente link: https://mmayala.github.io/DEV005-data-lovers/src
   
+  ## CORRECCIONES EN BASE A LOS TEST DE USABILIDAD
+  
+  ### -En el input buscar se tenia un botón que se eliminó, ya que, solo al ingresar el nombre iban apareciendo las coincidencias y resulto estar demás.
+  
+  ### -En la información al reverso de la tarjeta se le añadió por feedback color para hacerlo más llamativo.
+  
+  ### -Se ajusta color de placeholder en input para poder visualizarlo y que contrarreste mejor con el color de fondo.
+  
+  ### -Se cambia de lugar mensaje de bienvenida porque no se visualizaba bien.
+  
+  ### -Se ajusto imagen del pokémon al diseño de la tarjeta.
+
+  
