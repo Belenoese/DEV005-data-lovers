@@ -17,7 +17,6 @@ export const tarjetas = (data) => {
     </div>  
     </div> 
     </div>`;
-    //console.log(pokemon.stats);
   }
 
   return tarjetaString;
@@ -29,6 +28,7 @@ export const buscarPorNombre = (data, busqueda) => {
   );
 };
 
+
 export const filtrarTipos = (data, tipo) => {
   const dataFiltrada = data.pokemon.filter((pokemon) =>
     pokemon.type.includes(tipo)
@@ -36,7 +36,6 @@ export const filtrarTipos = (data, tipo) => {
   return dataFiltrada;
 };
 
-//console.log (filtrarTipos);
 
 export const ordenarPorNombre = (data, orden) => {
   const ordenados = data.pokemon.sort((a, b) => {
@@ -47,6 +46,7 @@ export const ordenarPorNombre = (data, orden) => {
   });
   return ordenados;
 };
+
 
 export const calcular = (valorActual) => {
   const valorTotal = 251;

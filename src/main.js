@@ -21,7 +21,10 @@ filtroTipo.addEventListener("change", (e) => {
   const pokemonSeleccionado = e.target.value;
   const pokemonHTML = filtrarTipos (data, pokemonSeleccionado);
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: pokemonHTML });
+ 
+  
 });
+
 
 //Ordenar de A-Z Y Z-A
 const ordenarSelect = document.getElementById("ordenar");
@@ -31,14 +34,18 @@ ordenarSelect.addEventListener("change", (e) => {
   bloqueTarjetas.innerHTML = tarjetas({ pokemon: ordenasc });
 });
 
-const calcucarPorcentaje = document.getElementById("filtroTipo");
+//se declaran dos variables para asociar el evento change con el id de html
+const calcularPorcentaje = document.getElementById("filtroTipo");
 const calculator = document.getElementById("calculator");
 
-calcucarPorcentaje.addEventListener("change", () => {
-  const pokeFilter = data.pokemon.filter(pokemon => pokemon.type.includes(calcucarPorcentaje.value));
+calcularPorcentaje.addEventListener("change", () => {
+  //se filtra los pokemon por tipos y se almacena en la variable 
+  const pokeFilter = data.pokemon.filter(pokemon => pokemon.type.includes(calcularPorcentaje.value));
+  // esta variable almacena el total de elementos de array
   const porcentaje = calcular(pokeFilter.length);
-  calculator.innerHTML = "Este tipo de pokémon representa el " + porcentaje + "% del total";
-})
+  //eventos del DOM imprime el resultado en pantalla
+  calculator.innerHTML = "Los pokemon de tipo " + calcularPorcentaje.value + " representa el " + porcentaje + "% del total";
+});
 
 
 

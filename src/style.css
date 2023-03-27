@@ -7,11 +7,9 @@
 body {
     background-color: rgb(237, 205, 117);
     flex-wrap: wrap;
-   
+}
  
- }
- 
- .contenedor {
+.contenedor {
      background-image: url(img/pokemon.jpg);
      background-position: center;
      background-repeat: no-repeat;
@@ -20,17 +18,16 @@ body {
      margin: 0px;
      padding: 0px;
      display: inline-flexbox;
- }
+}
  
- h1 {
-     
+h1 {     
      font-size:  25px;
      color: black;
      padding-top: 10px;
      text-align: center;
- }
+}
  
- #bloqueTarjetas{
+#bloqueTarjetas{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,20 +35,17 @@ body {
     align-items: start;
     align-content: space-between;
     gap: 20px 20px 
-  }
+}
     
 
- .tarjetapokemon {
-    
+.tarjetapokemon {    
      margin: 20px;
      padding: 30px;
     -webkit-perspective: 800;
      perspective: 800;
-    
-    
- }
+}
 
- .tarjeta{
+.tarjeta{
     padding: 15px;
     width: 200px;
     height: 250px;
@@ -60,11 +54,9 @@ body {
     position: relative;
     transform-style: preserve-3d;
     transition: .7s ease;
-    
+}
 
- }
- .frontTarjeta, .backTarjeta {
-
+.frontTarjeta, .backTarjeta {
      width: 100%;
      height: 100%;
      position: absolute;
@@ -72,20 +64,18 @@ body {
      left: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-     
- }
+}
 
- .frontTarjeta {
+.frontTarjeta {
     width: 100%;
     justify-content: center;
     text-align: center;
     color: black;
     font-weight: bold;
     align-items: center;
- }
+}
 
-
- .backTarjeta {
+.backTarjeta {
     transform: rotateY(180deg);
     padding: 15px;
     display: flex;
@@ -93,39 +83,39 @@ body {
     align-items: center;
     text-align: center;
     color:black;
-    font-family: "open sans";
- }
+    font-weight: bold;
+    background-color: rgb(147, 226, 147);
+}
 
- .tarjetapokemon:hover .tarjeta{
+.tarjetapokemon:hover .tarjeta{
     transform: rotateY(180deg);
-    
- }
+}
 
-
- .imagenPokemon{
-    width: 160px;
-    height: 150px;
-    margin: 5px;
+.imagenPokemon{
+    width: 200px;
+    height: 160px;
     padding: 10px;
     background-color: rgb(147, 226, 147);
     text-align: center;
-    
- }
+    border-radius: 10px;    
+}
 
- .botones{
+.botones{
    margin-left: 50px;
    text-align: center;
    margin: 20px;
- }
- #filtroTipo{
+}
+
+#filtroTipo{
    height: 40px;
    margin: 50px;
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 20px;
    font-weight: bold;
    background-color:#B0D5FF;
- }
- #name{
+}
+
+#name{
    height: 40px;
    margin: 50px;
    font-family: Georgia, 'Times New Roman', Times, serif;
@@ -133,25 +123,23 @@ body {
    font-weight: bold;
    background-color:#B0D5FF;
    
- }
+}
 
- input::placeholder {
+input::placeholder {
    color: black;
- }
+}
 
- #ordenar{
+#ordenar{
    height: 40px;
    margin: 50px;
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 20px;
    font-weight: bold;
    background-color:#B0D5FF;
-   margin-left: 30px;
-   
-   
- }
+   margin-left: 30px;   
+}
 
- #calculator {
+#calculator {
    width: 100%;
    height: 50px;
    display: flex;
@@ -159,4 +147,5 @@ body {
    align-items: center;
    font-size: 24px;
    font-weight: bold;
- }
+}
+
