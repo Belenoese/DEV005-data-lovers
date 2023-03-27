@@ -16,14 +16,23 @@
 
 
   * **Orden:** Se muestra un botón de selección para que puedas ordenar los Pokémon por su nombre de forma alfabética tanto en orden ascendente como descendente.
+  
+  Para complementar la interacción en esta página se visualizá el porcentaje de cada tipo de pokemón.
+
+  ## PLANIFICACIÓN E HISTORIAS DE USUARIO
 
 
-  ## PLANIFICACIÓN E HISTORIAS DE USUARIO PARA LA ELABORACION DE ESTE PROYECTO
-
-
-  Si gustas conocer mas en detalle como se planifico y desarrollo este proyecto en base a algunas historias de usuario te invitamos a ingresar al siguiente enlace https://trello.com/b/wllleFFm/data-lovers
+  Para realizar el presente proyecto se planifico las siguientes historias de usuario considerando los objetivos de aprendizaje y tomando como referencia la experiencia del usuario al usar paginas web similares.
+  
+  ![image](https://user-images.githubusercontent.com/124645862/227973361-418ba911-e22a-4499-8dee-074e199962be.png)
+  
+  ![image](https://user-images.githubusercontent.com/124645862/227974288-f6053887-03bd-409d-9764-5bd5b7dcdb8c.png)
+  
+  ![image](https://user-images.githubusercontent.com/124645862/227977993-fb113ddd-1c9c-499d-bc21-0c96d59e1044.png)
+  
+  ![image](https://user-images.githubusercontent.com/124645862/227978206-5b5513d1-16c0-4acc-b936-361ee0988659.png)
 
 
   ## DISEÑO DE INTERFAZ
 
-  Si gustas visualizar los diferentes diseños que se prototipearon antes del desarrollo de la interfaz te invitamos a ingresar al siguiente enlace https://www.figma.com/file/nblCTOUsGfmtb8naXDCRcb/PROTOTIPO-DE-ALTA-FIDELIDAD?node-id=0-1&t=xDpcp0YW2N99Qxqf-0 donde encontraras el primer prototipo de baja fidelidad, luego el de alta fidelidad ya mas completo en cuanto a diseño y por ultimo un prototipo a parte para las tarjetas de presentación de cada pokémon.
+  Si gustas visualizar los diferentes diseños que se prototiparón antes del desarrollo de la interfaz te invitamos a ingresar al siguiente enlace https://www.figma.com/file/nblCTOUsGfmtb8naXDCRcb/PROTOTIPO-DE-ALTA-FIDELIDAD?node-id=0-1&t=xDpcp0YW2N99Qxqf-0 donde encontraras el primer prototipo de baja fidelidad, luego el de alta fidelidad ya mas completo en cuanto a diseño y por ultimo un prototipo a parte para las tarjetas de presentación de cada pokémon.
