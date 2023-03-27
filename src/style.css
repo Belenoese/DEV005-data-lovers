@@ -149,3 +149,10 @@ input::placeholder {
    font-weight: bold;
 }
 
+#autores {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding-bottom: 50px;
+}
