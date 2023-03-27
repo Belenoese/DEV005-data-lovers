@@ -52,6 +52,7 @@ describe("tarjetas", () => {
     expect(typeof tarjetas(data)).toBe("string");});
 });
 
+
 describe("buscarPorNombre", () => {
   it("is a function", () => {
     expect(typeof buscarPorNombre).toBe("function");});
@@ -74,6 +75,7 @@ describe("buscarPorNombre", () => {
     ]);
   });
 });
+
 
 describe("filtrarTipos", () => {
   it("is a function", () => {
@@ -99,6 +101,7 @@ describe("filtrarTipos", () => {
   });
 });
 
+
 describe("ordenarPorNombre", () => {
   it("is a function", () => {
     expect(typeof ordenarPorNombre).toBe("function");
@@ -119,7 +122,12 @@ describe("ordenarPorNombre", () => {
   it("deberia ordenar los pokemon de Z-A", () => {
     expect(ordenarPorNombre({ pokemon: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6] }, "desc")).toEqual([pokemon2, pokemon1, pokemon6, pokemon4, pokemon3, pokemon5]);
   });
+
+  it("NO deberia ordenar los pokemon de Z-A", () => {
+    expect(ordenarPorNombre({ pokemon: [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6] }, "desc")).not.toEqual([pokemon1, pokemon2, pokemon3, pokemon4, pokemon5, pokemon6]);
+  });
 });
+
 
 describe("calcular", () => {
   it("is a function", () => {

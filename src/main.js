@@ -43,7 +43,7 @@ calcularPorcentaje.addEventListener("change", () => {
   const pokeFilter = data.pokemon.filter(pokemon => pokemon.type.includes(calcularPorcentaje.value));
   // esta variable almacena el total de elementos de array
   const porcentaje = calcular(pokeFilter.length);
-  //eventos del DOM imprime el resultado en consola
+  //eventos del DOM imprime el resultado en pantalla
   calculator.innerHTML = "Los pokemon de tipo " + calcularPorcentaje.value + " representa el " + porcentaje + "% del total";
 });
 
