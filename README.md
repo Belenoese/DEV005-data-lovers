@@ -1,7 +1,35 @@
+
 # ¿GUSTAS CONOCER MAS DEL MUNDO "POKÉMON GO"?
 
 
 ### A continuación te presentamos una interfaz responsiva para que puedas acceder desde el dispositivo móvil que más te acomode a la información de tus pokémons favoritos.  
+
+## DEFINICIÓN DEL PRODUCTO
+
+### Las siguientes preguntas estan definidas en base a la experiencia de usuario.
+
+### 1. ¿Quiénes son los principales usuarios del producto?
+
+   ### El público objetivo el que va dirigido es el sector de la población que se conoce como millennials también llamados generación Y griega, son un grupo de jóvenes       que   nacieron de los años 80 hasta los primeros años 2000.
+
+### 2.	¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+
+     • Descubrir los Pokémon más fuertes para sus batallas.
+
+     •	Habilidad de sus Pokémon favoritos
+
+     •	Poder agrupar los Pokémon por tipo (agua, tierra, fuego, etc.)
+
+### 3.	¿Cuáles son los datos mas relevantes que quieran ver en la interfaz y por qué?
+
+      Habilidades y fuerza de cada Pokémon
+
+### 4.	¿Cuándo utilizan o utilizarían el producto?
+
+    • Al comienzo de cada batalla
+
+    • En tiempos de libres para conocer más a sus Pokémon favoritos
+
 
 ## GUÍA PARA EL USUARIO
 
@@ -12,17 +40,17 @@
   * **Búsqueda por nombre:**  Puedes ingresar donde te indica la página ya sea en letras mayúsculas o minúsculas el nombre del Pokémon de tu interés para realizar una búsqueda más personalizada y rápida.
 
 
-  * **Filtrar por tipo:** Se muestra un botón de selección con todos los diferentes tipos de Pokémon para que al seleccionar el de tu interés como por ejemplo los de tipo agua se filtren y muestren en pantalla los que cumplen solo con el tipo seleccionado.
+  * **Filtrar por tipo:** Se muestra un botón de selección con todos los diferentes tipos de Pokémon para  seleccionar el de tu interés como por ejemplo los de tipo agua se filtren y muestren en pantalla los que cumplen solo con el tipo seleccionado; adicional de esta información en la página se visualizara el porcentaje de cada tipo en relacion al total de pokemon que son 251.
 
 
   * **Orden:** Se muestra un botón de selección para que puedas ordenar los Pokémon por su nombre de forma alfabética tanto en orden ascendente como descendente.
   
-  Para complementar la interacción en esta página se visualizá el porcentaje de cada tipo de pokemón.
+  
 
   ## PLANIFICACIÓN E HISTORIAS DE USUARIO
 
 
-  Para realizar el presente proyecto se planifico las siguientes historias de usuario considerando los objetivos de aprendizaje y tomando como referencia la experiencia del usuario al usar paginas web similares.
+  ### Para realizar el presente proyecto se planifico las siguientes historias de usuario considerando los objetivos de aprendizaje y tomando como referencia la experiencia del usuario al usar paginas web similares.
   
   ![image](https://user-images.githubusercontent.com/124645862/227973361-418ba911-e22a-4499-8dee-074e199962be.png)
   
@@ -35,4 +63,22 @@
 
   ## DISEÑO DE INTERFAZ
 
-  Si gustas visualizar los diferentes diseños que se prototiparón antes del desarrollo de la interfaz te invitamos a ingresar al siguiente enlace https://www.figma.com/file/nblCTOUsGfmtb8naXDCRcb/PROTOTIPO-DE-ALTA-FIDELIDAD?node-id=0-1&t=xDpcp0YW2N99Qxqf-0 donde encontraras el primer prototipo de baja fidelidad, luego el de alta fidelidad ya mas completo en cuanto a diseño y por ultimo un prototipo a parte para las tarjetas de presentación de cada pokémon.
+ ### Los diseños que se realizarón son los siguientes:
+  
+  ### - Prototipo de baja fidelidad
+  
+    
+  ![image](https://user-images.githubusercontent.com/124645862/228005536-a6561791-7d61-48af-9d62-812fff7f0824.png)
+
+  
+  ### - Prototipo de alta fidelidad
+  
+  ![PROTOTIPO DE ALTA FIDELIDAD](https://user-images.githubusercontent.com/124645862/228005983-a6b7091d-465a-4598-8b9a-73d7e8997f7c.png)
+
+  
+  ### - Prototipo de tarjeta final
+  
+  ![image](https://user-images.githubusercontent.com/124645862/228006912-f2e154bf-7bbd-4903-a82f-6ecf01bc20e1.png)
+
+  
+  
